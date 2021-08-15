@@ -179,4 +179,9 @@ for (i = 0; i < highScores.length; i++)
   }
 
 }
+
+
+//Thank you message
+console.log(chalk.blueBright.bold("\nThank You for playing this quiz, I hope you learnt something new about me.") + chalk.bgWhiteBright.black.bold("\n\n\n  *********---PLEASE SHARE YOUR VALUABLE FEEDBACK !---*********  "));
+
   
