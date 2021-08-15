@@ -161,5 +161,22 @@ for (var i = 0; i < questions.length; i++) {
     console.log(chalk.greenBright("Score: ") + highScores[i].score);
     console.log("-----------------\n");
   }
+
   
+  console.log("===================================================")
+
+
+//Check whether the user has beaten any previous highscore
+for (i = 0; i < highScores.length; i++) 
+{
+  var currentHighScore = highScores[i];
+
+  if (userScore > currentHighScore.score) 
+  {
+    console.log("Congratulations You've beaten a previous high score!\nPlease send me a screenshot of your score, so that I can update your name in the highscore list");
+
+    break;  //using break so that the above message is not displayed multiple times in case user beats all of the previous highscores.
+  }
+
+}
   
