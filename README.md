@@ -1,4 +1,4 @@
-DO YOU KNOW ME ?
+# Do You Know Me Quiz
 
 1. This is a CLI based quiz app to test how well my friends know me, it is made using Repl.it.
 2. The quiz has total of 15 questions.
