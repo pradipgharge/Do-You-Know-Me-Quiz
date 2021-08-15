@@ -32,3 +32,91 @@ function play(questionNo, question, answer) {
     console.log(chalk.whiteBright.bgBlue("\n Your current score is: "+ userScore +" "));
     console.log("\n---------------------------------------------")
   }
+
+  //array of objects
+var questions = [
+    {
+      question: "What is my favourite color ? ",
+      answer: "green",
+    },
+  
+    {
+      question: "What is my favourite dish ? ",
+      answer: "chole bhature",
+    },
+  
+    {
+      question: "What is my favourite football club ? ",
+      answer: "real madrid",
+    },
+  
+    {
+      question: "What is my favourite movie ? ",
+      answer: "shawshank redemption",
+    },
+  
+    {
+      question: "Which city do I live in ? ",
+      answer: "pune",
+    },
+  
+    {
+      question: "Who is my favourite sports person ? ",
+      answer: "Cristiano Ronaldo",
+    },
+  
+    {
+      question: "What is my pet's name ? ",
+      answer: "jarvis",
+    },
+  
+  
+    {
+      question: "Who is my biggest inspiration ? ",
+      answer: "steve jobs",
+    },
+  
+  
+    {
+      question: "What is my favourite programming language ? ",
+      answer: "javascript",
+    },
+  
+  
+    {
+      question: "What is my mother tongue ? ",
+      answer: "marathi",
+    },
+  
+  
+    {
+      question: "Who is my favourite superhero ? ",
+      answer: "ironman",
+    },
+  
+  
+    {
+      question: "What is my favourite hobby ? ",
+      answer: "playing video games",
+    },
+  
+  
+    {
+      question: "What is my favourite book ? ",
+      answer: "atomic habits",
+    },
+  
+  
+    {
+      question: "Do I like summer or winter ? ",
+      answer: "winter",
+    },
+  
+  
+    {
+      question: "What is my first school's name ? ",
+      answer: "happy hours",
+    }
+  
+  ];
+  
