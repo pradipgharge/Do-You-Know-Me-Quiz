@@ -119,4 +119,47 @@ var questions = [
     }
   
   ];
+
+
+  //function call
+for (var i = 0; i < questions.length; i++) {
+    var currentQuestion = questions[i];
+    play(i + 1, currentQuestion.question, currentQuestion.answer);
+  }
+  
+  
+  //displaying user's final score
+  console.log(chalk.bgRed.white.bold(" Time for the result: ") + "\n\nYour final score is: " + userScore, "\n");
+  
+  
+  //record of highscores
+  var highScores = [
+    {
+      playerName: "Aai(mom)",
+      score: 30,
+      medal: emoji.get("first_place_medal")
+    },
+  
+    {
+      playerName: "pradipgharge",
+      score: 28,
+      medal: emoji.get("second_place_medal")
+    },
+  
+    {
+      playerName: "sankethgharge",
+      score: 24,
+      medal: emoji.get("third_place_medal")
+    }
+  ];
+  
+  
+  //displaying highscores
+  console.log(chalk.black.bold.bgYellowBright("-----Checkout the highscores------ \n"));
+  for (i = 0; i < highScores.length; i++) {
+    console.log(chalk.cyanBright("Player name: ") + highScores[i].playerName + highScores[i].medal);
+    console.log(chalk.greenBright("Score: ") + highScores[i].score);
+    console.log("-----------------\n");
+  }
+  
   
