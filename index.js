@@ -13,3 +13,22 @@ console.log(chalk.cyanBright("1.There are fifteen questions in this game.\n2.For
 var userScore = 0;
 console.log("-----------------------------------------------------------------------------\n")
 console.log(chalk.black.bold.bgYellowBright(" HERE COME THE QUESTIONS--- \n"))
+
+//play-function
+function play(questionNo, question, answer) {
+    var userAnswer = readlineSync.question(questionNo + ". " + question);
+    console.log(chalk.yellowBright("\nYou entered:" + userAnswer))
+  
+    if (userAnswer.toUpperCase() === answer.toUpperCase()) {
+      console.log(chalk.green.bold("You are right!" + emoji.get("full_moon_with_face")));
+      userScore = userScore + 2;
+    }
+    else {
+      console.log(chalk.redBright.bold("You are wrong!" + emoji.get("disappointed_relieved")));
+      console.log(chalk.cyanBright("\nThe correct answer is:", answer));
+      userScore = userScore - 1;
+    }
+  
+    console.log(chalk.whiteBright.bgBlue("\n Your current score is: "+ userScore +" "));
+    console.log("\n---------------------------------------------")
+  }
